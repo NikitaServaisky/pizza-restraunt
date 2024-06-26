@@ -2,7 +2,7 @@
 header {
     /* background-color: #333; */
     text-align: center;
-    color: #250505;
+    color: #dfd0d0;
     padding: 35px 0;
     font-size: 30px;
     font-weight: 700;
@@ -20,7 +20,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #250505;
+    color: #dfd0d0;
     text-decoration: none;
 }
 
