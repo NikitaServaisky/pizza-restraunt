@@ -1,0 +1,29 @@
+
+header {
+    /* background-color: #333; */
+    text-align: center;
+    color: #250505;
+    padding: 35px 0;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #250505;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
