@@ -1,7 +1,7 @@
 header {
-
-    text-align: center;
-    padding: 35px 0;
+    /* background: #000; */
+    text-align: start;
+    padding: 10px 0;
     font-size: 30px;
     font-weight: 700;
 }
@@ -19,6 +19,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
+    color: #f6c139;
 }
 
 nav ul li a:hover {

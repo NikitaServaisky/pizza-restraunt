@@ -1,0 +1,52 @@
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+  padding: 10px;
+}
+.item {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  & img {
+    width: 90%;
+  }
+
+  & .title {
+    font-size: 30px;
+    color: #f6c139;
+  }
+
+  & p {
+    font-size: 24px;
+    color: #fff;
+  }
+
+  & ul {
+    padding: 0;
+    display: flex;
+    list-style: none;
+    gap: 10%;
+
+    & li {
+      background: transparent;
+      padding: 10px 20px;
+      border: #fff 1px solid;
+      border-radius: 10px;
+
+      &:hover{
+        background-color: #f6c139;
+        & a{
+          color:black
+        }
+      }
+
+      & a {
+        color: #fff;
+      }
+    }
+  }
+}
