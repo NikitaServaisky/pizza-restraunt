@@ -1,14 +1,29 @@
-// Example of DOM manipulation
-document.addEventListener('DOMContentLoaded', function() {
-    const headings = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
+//header coding...
 
-    headings.forEach(function(heading) {
-        heading.addEventListener('mouseover', function() {
-            this.style.fontSize = '2em';
-        });
+const headerOptions = {
+  'בית': 'index',
+  'מי אנחנו': 'about',
+  'צור קשר': 'contact',
+  'גלריה': 'gallery',
+  'תפריט': 'menu',
+};
 
-        heading.addEventListener('mouseout', function() {
-            this.style.fontSize = '1.5em';
-        });
+function fillHeader(options) {
+  const navList = document.querySelector('ul');
+  if (navList) {
+    Object.keys(options).forEach((optionText) => {
+      const listItem = document.createElement('li');
+      const aLink = document.createElement('a');
+      aLink.href = `${options[optionText]}.html`;
+      aLink.textContent = optionText;
+      listItem.appendChild(aLink);
+      navList.appendChild(listItem);
     });
+  } else {
+    console.error('Navigation list element not found.');
+  }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  fillHeader(headerOptions);
 });
