@@ -6,6 +6,7 @@ const headerOptions = {
   'צור קשר': 'contact',
   'גלריה': 'gallery',
   'תפריט': 'menu',
+  'הזמנה': 'cart',
 };
 
 function fillHeader(options) {

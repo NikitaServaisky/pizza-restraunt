@@ -1,0 +1,18 @@
+.gallery {
+  & h1 {
+    font-size: 30px;
+    color: #f6c139;
+  }
+  & .gallery-images{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 10px;
+
+    & img {
+        width: 100%;
+        display: block;
+        height: auto;
+    }
+  }
+}
