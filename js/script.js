@@ -28,3 +28,11 @@ function fillHeader(options) {
 document.addEventListener('DOMContentLoaded', () => {
   fillHeader(headerOptions);
 });
+
+//gallery coding...
+
+const arrowNext = document.querySelector('.right');
+const arrowPrv = document.querySelector('.left');
+const closeWin = document.querySelector('.modal-close');
+const openWin = document.querySelectorAll('.gal-img');
+

@@ -1,18 +1,83 @@
 .gallery {
-  & h1 {
+  h1 {
     font-size: 30px;
     color: #f6c139;
   }
-  & .gallery-images{
+  .gallery-images {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2,1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 10px;
 
-    & img {
-        width: 100%;
-        display: block;
-        height: auto;
+    img {
+      width: 100%;
+      display: block;
+      height: auto;
     }
+  }
+
+  .modal {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    inset: 0;
+    display: flex;
+    padding: 30px;
+    overflow-y: auto;
+
+    .modal-container {
+      position: relative;
+      max-width: 600px;
+      background-color: #fff;
+      margin: auto;
+      border-radius: 10px;
+      padding: 60px;
+
+      .modal-close {
+        position: absolute;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 24px;
+        top: 5px;
+        left: 5px;
+      }
+
+      .arrow {
+        background: none;
+        border: none;
+        &::before {
+          content: '';
+          position: absolute;
+          width: 24px;
+          height: 3px;
+          background-color: #000;
+        }
+
+        &::after {
+          content: '';
+          position: absolute;
+          width: 3px;
+          height: 24px;
+          background-color: #000;
+        }
+        &.right {
+          position: absolute;
+          transform: rotate(45deg);
+          right: 5px;
+          top: 50%;
+          cursor: pointer;
+        }
+        &.left {
+          position: absolute;
+          transform: rotate(225deg);
+          left: 5px;
+          top: 50%;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .hiden {
+    display: none;
   }
 }
