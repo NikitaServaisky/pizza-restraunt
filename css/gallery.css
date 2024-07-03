@@ -5,8 +5,8 @@
   }
   .gallery-images {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(5, 300px);
+    grid-template-rows: repeat(2, 300px);
     gap: 10px;
 
     img {
@@ -26,7 +26,7 @@
 
     .modal-container {
       position: relative;
-      max-width: 600px;
+      max-width: 900px;
       background-color: #fff;
       margin: auto;
       border-radius: 10px;
@@ -60,6 +60,7 @@
           height: 24px;
           background-color: #000;
         }
+
         &.right {
           position: absolute;
           transform: rotate(45deg);
@@ -67,6 +68,7 @@
           top: 50%;
           cursor: pointer;
         }
+        
         &.left {
           position: absolute;
           transform: rotate(225deg);
@@ -75,9 +77,13 @@
           cursor: pointer;
         }
       }
+
+      .modal-image{
+        width: 700px;
+      }
     }
   }
-  .hiden {
+  .invisible {
     display: none;
   }
 }
