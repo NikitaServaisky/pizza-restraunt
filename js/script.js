@@ -77,5 +77,10 @@ modal.addEventListener('click', (e) => {
   }
 });
 
+const displayedImages = Array.from(images).slice(0, 6);
+displayedImages.forEach((image) => {
+  image.classList.add('displayed');
+});
+
 ////////////////////////////////////////////////////////////////
 
