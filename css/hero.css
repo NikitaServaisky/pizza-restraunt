@@ -51,3 +51,7 @@
     }
   }
 }
+
+@media (min-width: 577px) and (max-width: 768px) {
+  /* CSS rules for small devices */
+}

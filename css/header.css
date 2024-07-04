@@ -45,10 +45,56 @@ nav ul li a:hover::after {
 }
 
 a {
-    display: flex;
-    justify-content: end;
+  display: flex;
+  justify-content: end;
   img {
     width: 10%;
     border-radius: 50%;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  /* CSS rules for small devices */
+  nav {
+    position: relative;
+    display: none;
+  }
+  nav.active {
+    display: inline-block;
+    ul {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    top: 10px;
+
+    span::before {
+      content: '';
+      position: absolute;
+      width: 35px;
+      height: 2px;
+      background-color: #f6c139;
+    }
+    span {
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+  .hamburger.active span:nth-child(1) {
+    position: absolute;
+    transform: rotate(45deg) translate(10px, 10px);
+  }
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active span:nth-child(3) {
+    position: absolute;
+    transform: rotate(-45deg) translate(6px, -9px);
   }
 }

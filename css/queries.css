@@ -1,0 +1,15 @@
+@media (min-width: 577px) and (max-width: 768px) {
+  /* CSS rules for small devices */
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  /* CSS rules for medium devices */
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  /* CSS rules for large devices */
+}
+
+@media (min-width: 1201px) {
+  /* CSS rules for extra large devices */
+}
