@@ -54,7 +54,7 @@ a {
   }
 }
 
-@media (min-width: 577px) and (max-width: 768px) {
+@media(max-width: 768px) {
   /* CSS rules for small devices */
   nav {
     position: relative;
@@ -66,7 +66,7 @@ a {
     inset: 0;
     display: inline-block;
     ul {
-      display: inline-flex;
+      display: flex;
       flex-direction: column;
       margin: 0 auto;
     }
