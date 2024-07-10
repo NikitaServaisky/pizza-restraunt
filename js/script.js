@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const headerOptions = {
     בית: 'index',
-    'מי אנחנו': 'about',
     'צור קשר': 'contact',
     גלריה: 'gallery',
     תפריט: 'menu',
