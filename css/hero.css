@@ -17,7 +17,7 @@
 
   & .title {
     font-size: 30px;
-    color: #f6c139;
+    color: #bba360;
   }
 
   & p {
@@ -39,7 +39,7 @@
       transition: background-color 0.5s ease;
 
       &:hover{
-        background-color: #f6c139;
+        background-color: #bba360;
         & a{
           color:black
         }
