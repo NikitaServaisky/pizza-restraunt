@@ -1,0 +1,26 @@
+.details {
+  .container {
+    h1 {
+      font-size: 30px;
+      color: #bba360;
+    }
+    form {
+      display: grid;
+      /* grid-template-rows: repeat(2, 1fr); */
+      grid-template-columns: repeat(4, 1fr);
+      input {
+        width: 300px;
+        border-radius: 10px;
+        padding: 10px;
+      }
+      label {
+        font-size: 24px;
+        display: block;
+        color: #bba360;
+        cursor: pointer;
+      }
+    }
+    .btn {
+    }
+  }
+}

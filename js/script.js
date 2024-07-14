@@ -3,10 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const headerOptions = {
     בית: 'index',
-    'צור קשר': 'contact',
     גלריה: 'gallery',
     תפריט: 'menu',
-    הזמנה: 'cart',
+    הזמנה: 'details',
   };
 
   function fillHeader(options) {
@@ -30,10 +29,10 @@ document.addEventListener('DOMContentLoaded', () => {
 const hamburger = document.querySelector('.hamburger');
 const nav = document.querySelector('nav');
 
-    hamburger.addEventListener('click', () => {
-      nav.classList.toggle('active');
-      hamburger.classList.toggle('active');
-    });
+hamburger.addEventListener('click', () => {
+  nav.classList.toggle('active');
+  hamburger.classList.toggle('active');
+});
 
 /////////////////////////////////////////////////////////////////
 
@@ -55,7 +54,7 @@ function openModal(index) {
 }
 
 function closeModal() {
-  modal.classList.add('invisible')
+  modal.classList.add('invisible');
 }
 
 function nextImage() {
@@ -71,8 +70,8 @@ function prevImage() {
 images.forEach((image, index) => {
   image.addEventListener('click', () => {
     openModal(index);
-  })
-})
+  });
+});
 
 modalClose.addEventListener('click', closeModal);
 nextImg.addEventListener('click', nextImage);
@@ -90,4 +89,3 @@ displayedImages.forEach((image) => {
 });
 
 ////////////////////////////////////////////////////////////////
-
