@@ -5,14 +5,18 @@
   }
   .gallery-images {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 400px);
     gap: 20px;
+    justify-content: center;
 
     img {
       width: 100%;
-      display: block;
+      display: inline-block;
       height: auto;
+      transition: transform .5s;
+      &:hover{
+        transform: scale(1.2);
+      }
     }
 
     .image:not(.displayed) {
