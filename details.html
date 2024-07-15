@@ -28,25 +28,24 @@
       </div>
     </header>
 
-    <main>
-      <section class="details">
-        <div class="container">
-          <h1>הזמנה</h1>
-          <form action="submit.php" method="post">
-            <label for="name">שם:</label>
-            <input type="text" id="name" name="name" required />
-
-            <label for="phone">טלפון:</label>
-            <input type="phone" id="phone" name="phone" required />
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-
-            <button type="submit" class="btn">Submit</button>
-          </form>
+<main>
+  <section class="details">
+    <div class="container">
+      <h1>הזמנה</h1>
+      <form action="submit.php" method="post">
+        <div class="input-group">
+          <input type="text" id="name" placeholder="שם המזמין" name="name" required />
+          <input type="phone" id="phone" placeholder="מספר טלפון" name="phone" required />
         </div>
-      </section>
-    </main>
+        <div class="textarea-group">
+          <textarea id="message" name="message" placeholder="הערות להזמנה" rows="4" required></textarea>
+          <textarea id="otherMessage" name="otherMessage" placeholder="הערות נוספות" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </div>
+  </section>
+</main>
 
     <footer>
       <p>&copy; 2024 Pizza Restaurant. All rights reserved.</p>

@@ -6,21 +6,35 @@
     }
     form {
       display: grid;
-      /* grid-template-rows: repeat(2, 1fr); */
-      grid-template-columns: repeat(4, 1fr);
-      input {
-        width: 300px;
-        border-radius: 10px;
-        padding: 10px;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px;
+      .input-group {
+        display: flex;
+        justify-content: space-between;
+        input {
+          width: 100%;
+          border-radius: 10px;
+          padding: 10px;
+        }
       }
-      label {
-        font-size: 24px;
-        display: block;
-        color: #bba360;
-        cursor: pointer;
+      .textarea-group {
+        display: flex;
+        flex-direction: column;
+        textarea {
+          padding: 10px;
+          border-radius: 10px;
+          resize: none;
+          width: 100%;
+          display: block;
+          margin-bottom: 10px;
+        }
       }
     }
     .btn {
+      border-radius: 10px;
+      border: 1px #f0f0f0 solid;
+      background-color: transparent;
+      color: #f0f0f0;
     }
   }
 }
