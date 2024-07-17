@@ -38,10 +38,10 @@
       border-radius: 10px;
       transition: background-color 0.5s ease;
 
-      &:hover{
+      &:hover {
         background-color: #bba360;
-        & a{
-          color:black
+        & a {
+          color: black;
         }
       }
 
@@ -49,6 +49,57 @@
         color: #f0f0f0;
       }
     }
+  }
+}
+
+.coockies {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 10px;
+  background-image: radial-gradient(rgba(30, 1, 1, 0.8) 50%, rgba(23, 9, 3, 0.9)),
+    url(../img/woodBackground.jpg);
+  background-size: cover;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  .massage{
+    color: #f0f0f0;
+    font-size: 16px;
+    padding: 10px;
+
+    .title{
+      color: #bba360;
+    }
+
+    .btn{
+      padding: 10px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: #f0f0f0 1px solid;
+    color: #f0f0f0;
+    transition: all .5s;
+
+    &:hover{
+      background-color: #bba360;
+    }
+    }
+  }
+
+  .invisible{
+    display: none;
   }
 }
 

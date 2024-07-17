@@ -46,7 +46,9 @@ const prevImg = document.querySelector('.left');
 const modalImg = document.getElementById('modalImage');
 
 let currentIndex = 0;
-
+//////
+console.log(modalClose);
+//////
 function openModal(index) {
   currentIndex = index;
   modalImg.src = images[currentIndex].src;
@@ -54,6 +56,7 @@ function openModal(index) {
 }
 
 function closeModal() {
+  console.log(modal);
   modal.classList.add('invisible');
 }
 
@@ -91,4 +94,3 @@ displayedImages.forEach((image) => {
 ////////////////////////////////////////////////////////////////
 
 //coockies coding....
-
