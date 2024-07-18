@@ -9,9 +9,13 @@
     gap: 20px;
     justify-content: center;
 
+    .img-pnt {
+      max-width: 250px;
+      overflow: hidden;
+    }
+
     img {
       width: 100%;
-      max-width: 250px;
       display: inline-block;
       height: auto;
       transition: transform 0.5s;
