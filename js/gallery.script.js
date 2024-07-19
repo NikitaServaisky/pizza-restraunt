@@ -45,7 +45,18 @@ modal.addEventListener('click', (e) => {
   }
 });
 
-const displayedImages = Array.from(images).slice(0, 6);
-displayedImages.forEach((image) => {
-  image.classList.add('displayed');
-});
+function updateDisplayedImages() {
+  const isSmallScreen = window.innerWidth <= 768;
+  const displayedImages = Array.from(images).slice(0, isSmallScreen ? 2 : 6);
+
+  images.forEach((image) => {
+    image.classList.remove('displayed');
+  });
+
+  displayedImages.forEach((image) => {
+    image.classList.add('displayed');
+  });
+}
+
+updateDisplayedImages();
+window.addEventListener('resize', updateDisplayedImages);
