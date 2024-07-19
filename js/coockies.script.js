@@ -1,8 +1,8 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const coockiesOk = document.querySelector('.ok');
-  const coockies = document.querySelector('.coockies');
+/////coocies coding....
 
-  coockiesOk.addEventListener('click', () => {
-    coockies.classList.add('invisible');
-  });
+const coockiesOk = document.querySelector('.ok');
+const coockies = document.querySelector('.coockies');
+
+coockiesOk.addEventListener('click', () => {
+  coockies.classList.add('invisible');
 });
